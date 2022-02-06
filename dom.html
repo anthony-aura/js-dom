@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #second-title {
+            background-color: antiquewhite;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my blog website</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h3>My Awesome Blog-1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex architecto dolorem repellat voluptate
+                    porro cumque, quo nihil, unde earum sunt quod officiis dignissimos nemo aperiam neque aspernatur
+                    quasi ut veritatis!</p>
+            </article>
+            <article>
+                <h3 id="second-title">My Awesome Blog-2</h3>
+                <p>Aperiam, laudantium excepturi ipsa in error rerum quod, omnis assumenda facilis voluptatem maiores
+                    officia quis provident expedita iste eius velit corporis nulla cumque obcaecati corrupti voluptate
+                    nesciunt porro esse. Tempora.</p>
+            </article>
+            <article>
+                <h3 id="third-title">My Awesome Blog-3</h3>
+                <p>Velit sint voluptatum fugit, ducimus neque inventore. Dicta nesciunt harum, blanditiis obcaecati
+                    voluptas perspiciatis rerum non sit modi minima explicabo temporibus, ex aut, recusandae odit dolor
+                    sapiente est soluta ut?</p>
+            </article>
+            <article>
+                <h3>My Awesome Blog-3</h3>
+                <p>Velit sint voluptatum fugit, ducimus neque inventore. Dicta nesciunt harum, blanditiis obcaecati
+                    voluptas perspiciatis rerum non sit modi minima explicabo temporibus, ex aut, recusandae odit dolor
+                    sapiente est soluta ut?</p>
+            </article>
+        </section>
+    </main>
+    <script>
+        const student = { name: 'kismot Ali', age: 16, height: 60 };
+        // console.log(document);
+
+        const blogTitles = document.getElementsByTagName("h3");
+        for (const h3 of blogTitles) {
+            // console.log(h3.innerText);
+        }
+        // console.log(blogTitles);
+
+        const blogDetails = document.getElementsByTagName("p")
+        for (const p of blogDetails) {
+            // console.log(p.innerText);
+        }
+
+        const secondTitle = document.getElementById('second-title');
+        secondTitle.style.textAlign = 'center';
+
+        const thirdTitle = document.getElementById('third-title');
+        thirdTitle.innerText = 'Title Updated by JS';
+        thirdTitle.style.backgroundColor = 'salmon';
+        thirdTitle.style.padding = '10px';
+        thirdTitle.style.margin = '10px';
+    </script>
+</body>
+
+</html>
